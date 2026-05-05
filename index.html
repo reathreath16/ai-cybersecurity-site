@@ -19,19 +19,22 @@
     }
 
     header {
-      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 58, 138, 0.92)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
       color: white;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.6rem;
       margin-bottom: 15px;
     }
 
     header p {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto;
       font-size: 1.15rem;
     }
@@ -48,7 +51,7 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 14px;
+      margin: 0 12px;
       font-weight: bold;
       font-size: 0.95rem;
     }
@@ -116,6 +119,10 @@
       margin-top: 10px;
     }
 
+    li {
+      margin-bottom: 8px;
+    }
+
     .warning {
       background-color: #fff7ed;
       border-left: 6px solid #f97316;
@@ -139,12 +146,18 @@
     .button {
       display: inline-block;
       margin-top: 20px;
-      padding: 14px 22px;
+      padding: 14px 24px;
       background-color: #22c55e;
       color: #0f172a;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.04);
+      background-color: #86efac;
     }
 
     footer {
@@ -157,6 +170,12 @@
 
     .source-list li {
       margin-bottom: 10px;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      opacity: 0.95;
     }
   </style>
 </head>
@@ -179,9 +198,9 @@
     <section id="claim">
       <h2>Main Claim</h2>
       <div class="claim-box">
-        Artificial Intelligence innovation negatively impacts cybersecurity employment, which in turn can harm the economy.
+        Artificial Intelligence innovation negatively impacts cybersecurity employment, which in turn harms the economy.
       </div>
-      <p style="margin-top: 18px;">Cybersecurity is often viewed as a stable and growing career field. However, as AI becomes more advanced, it is starting to take over tasks that used to be handled by cybersecurity professionals. This makes the future of the field more uncertain for students, workers, and companies.</p>
+      <p style="margin-top: 18px;">Cybersecurity is often viewed as a stable and growing career field. However, as AI becomes more advanced, it is starting to take over tasks that used to be handled by cybersecurity professionals. This makes the future of the field more uncertain, especially for students and new workers trying to enter cybersecurity.</p>
     </section>
 
     <section id="change">
@@ -204,6 +223,7 @@
           <p>As more tasks are automated, companies may choose AI systems instead of hiring more employees.</p>
         </div>
       </div>
+      <p style="margin-top: 18px;">This shows that AI is not just helping cybersecurity workers, but starting to replace parts of their role, especially in repetitive tasks. Because of this, companies may rely more on AI systems instead of hiring employees, which directly affects job opportunities.</p>
     </section>
 
     <section id="workers" class="warning">
@@ -214,6 +234,7 @@
         <li>AI can create a skills gap because workers may need advanced technical skills before they even get hired.</li>
         <li>When companies rely too much on AI, human experience and judgment can become less valued.</li>
       </ul>
+      <p style="margin-top: 15px;">This is important because many people rely on entry-level jobs to gain experience. If those roles are reduced, it becomes harder for new workers to enter the field, which can limit long-term career growth.</p>
       <p style="margin-top: 15px;">This does not only affect cybersecurity workers. Similar automation can also impact jobs in accounting, customer support, finance, data analysis, and other fields around the world.</p>
     </section>
 
@@ -237,18 +258,20 @@
           <p>Because AI is being adopted worldwide, job loss in one field can contribute to larger economic problems across industries.</p>
         </div>
       </div>
+      <p style="margin-top: 18px;">This creates a chain reaction. When people lose jobs, they spend less money, which affects businesses and overall economic growth. Over time, this can increase unemployment and economic instability.</p>
     </section>
 
     <section id="counterargument" class="counter">
       <h2>Counterargument: AI Can Help Cybersecurity</h2>
       <p>Some people argue that AI is a positive development for cybersecurity because it can identify threats faster, reduce human error, and help companies respond to attacks more efficiently. This is true, and AI can be useful when it supports workers.</p>
-      <p style="margin-top: 15px;"><strong>However,</strong> AI becomes a problem when companies use it to replace too many human workers. Efficiency is important, but it should not come at the cost of removing opportunities for people who need jobs and career growth.</p>
+      <p style="margin-top: 15px;"><strong>However,</strong> removing too many human workers can actually weaken cybersecurity. While AI can detect threats quickly, it does not have the same level of judgment, creativity, or decision-making as humans. Cybersecurity often requires adapting to new and unpredictable attacks, which AI alone may not handle effectively. Some companies that rely too heavily on AI may struggle and need to rehire workers, showing that AI cannot fully replace human expertise. Because of this, over-relying on AI can create both security risks and job loss at the same time.</p>
     </section>
 
     <section id="action" class="cta">
       <h2>Call to Action</h2>
       <p>CEOs of cybersecurity companies should invest in workers, not just AI systems. Companies should create training programs that help employees adapt to AI-driven roles instead of being replaced by them.</p>
-      <a class="button" href="#sources">Support Change</a>
+      <a class="button" href="https://c.org/mH467HyFHS" target="_blank">Support Change</a>
+      <p class="note">Click the button to support workforce training and job protection for cybersecurity workers.</p>
     </section>
 
     <section id="sources">
@@ -264,7 +287,7 @@
   </main>
 
   <footer>
-    <p>Help Spread awareness for the future of cyber security and the economy.</p>
+    <p>Created to explore how AI is impacting cybersecurity jobs and the future workforce.</p>
   </footer>
 </body>
 </html>
